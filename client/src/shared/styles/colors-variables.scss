@@ -1,0 +1,27 @@
+/*   Color variables   */
+$c-white: #FFF;
+$c-black: #1D1D1D;
+$c-red: #FF3B30;
+
+$c-main-blue: #091227;
+$c-light-blue: #a5c0ffb3;
+$c-main-white: #EAF0FF;
+$c-grey: #8996B8;
+
+:root {
+  --bg-main: #{$c-white};
+  --title-color: #{$c-black};
+  --subtitle-color: #{$c-grey};
+}
+
+html[data-theme='light'] {
+  --bg-main: #($c-white);
+  --title-color: #($c-black);
+  --subtitle-color: #($c-grey);
+}
+
+html[data-theme='dark'] {
+  --bg-main: #($c-main-blue);
+  --title-color: #($c-main-white);
+  --subtitle-color: #($c-light-blue);
+}

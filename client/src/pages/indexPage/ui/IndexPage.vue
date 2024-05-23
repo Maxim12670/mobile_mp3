@@ -1,9 +1,11 @@
 <template>
-  <q-page class="index-page" padding>
-    <h1>Hello</h1>
-  </q-page>
+  <MainHeader />
 </template>
 
 <style lang="scss" scoped>
 @import './style.scss';
 </style>
+
+<script setup>
+import { MainHeader } from '@widgets/index';
+</script>
